@@ -1,0 +1,21 @@
+# Properties for configuring access to the SAMPLE PostgreSQL repository
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sample
+    username: sample
+    password: sample2022
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        format-sql: true
+    hibernate:
+      ddl-auto: validate
+
+# Encryption key for PostgreSQL encrypted data
+encryption:
+  key: 'very secure encryption key!'
