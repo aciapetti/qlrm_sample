@@ -25,8 +25,8 @@ import org.hibernate.annotations.Type;
 @GenericGenerator(name = "uuid2", strategy = "uuid2")
 public class Investigation implements Serializable {
 	
-	private static final long serialVersionUID = 8984145977370105303L;
-	
+	private static final long serialVersionUID = 5483845738347610640L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "uuid2")
 	@Column(name = "id", nullable = false)

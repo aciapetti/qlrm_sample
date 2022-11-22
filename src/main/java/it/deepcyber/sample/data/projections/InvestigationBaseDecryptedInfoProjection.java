@@ -1,9 +1,6 @@
 package it.deepcyber.sample.data.projections;
 
 import java.io.Serializable;
-import java.util.UUID;
-
-import org.hibernate.annotations.Type;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,10 +15,9 @@ import lombok.ToString;
 @ToString(includeFieldNames = true)
 public class InvestigationBaseDecryptedInfoProjection implements Serializable {
 	
-	private static final long serialVersionUID = 6273624216615592168L;
+	private static final long serialVersionUID = 2878453596560872059L;
 
-	@Type(type="org.hibernate.type.PostgresUUIDType")
-	private UUID id;
+	private String id;
 	
 	private String decryptedName;
 	
